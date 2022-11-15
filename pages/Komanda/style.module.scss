@@ -1,0 +1,91 @@
+.comands {
+   display: flex;
+    flex-direction: column;
+
+    & h2.title {
+        margin: 1rem;
+        color: #3C3C3C;
+    }
+    & .cards {
+        padding: 0 0.5em;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(455px, 1fr));
+        grid-template-rows: 550px;
+        gap: 1rem;
+        &__item {
+            height: auto;
+            position: relative;
+            max-width: 454px;
+            width: 100%;
+            background: #6A7B8E;
+            background-size: cover;
+            border-radius: 30px;
+            max-height: 550px;
+            font-family: 'Gotham Pro L',sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 35px;
+            line-height: 100%;
+            color: #FFFFFF;
+            & > img {
+                max-width: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 30px;
+            }
+        }
+        &__title {
+            position: absolute;
+            left: .7em;
+            bottom: .125em;
+            max-width: 200px;
+        }
+    }
+    /*@media screen and (max-width: 1733px) {
+        grid-template-rows: 9.7rem 51.5rem 51.2rem 10.6rem auto;
+
+*/
+    }
+
+.slider {
+    max-width: 90%;
+    & h3 {
+        margin: 1rem;
+    }
+    &__container {
+        padding: 0 3.7em;
+        position: relative;
+        margin: 0 -3.7em;
+    }
+}
+
+.slide {
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    max-width: 428px;
+    width: 90%;
+    height: 100%;
+    & img {
+        max-width: 100%;
+        width: 100%;
+        min-width: 100%;
+        object-fit: cover;
+    }
+    &__title {
+        position: absolute;
+        bottom: .75em;
+        left: .7em;
+        font-family: 'Gotham Pro L',sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 2.1875em;
+        line-height: 1;
+        color: #fff;
+    }
+}
+.gtitle {
+    padding: 0 0 0 0.2em;
+    max-width: 12em;
+}

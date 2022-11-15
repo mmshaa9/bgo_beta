@@ -1,0 +1,93 @@
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__block1 {
+        display: flex;
+         flex-wrap: wrap;
+        max-width: 650px;
+        margin: 0 0 0 100px;
+
+        &__group {
+
+            display: flex;
+            flex-direction: column;
+            margin: 0 3rem;
+
+            & h5 {
+                margin: 0;
+                font-family: 'Gotham Pro', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 50px;
+                line-height: 100%;
+                color: #3C3C3C;
+            }
+
+            & h6 {
+                margin: 20px 0 15px 0;
+                font-family: 'Gotham Pro', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 100%;
+                color: #3C3C3C;
+               text-decoration: none;
+            }
+
+            & p {
+                margin: 5px 0 5px 0;
+                font-family: 'Gotham Pro', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 100%;
+                color: #3C3C3C;
+                & a {
+                    margin: 5px 0 5px 0;
+                    font-family: 'Gotham Pro', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 100%;
+                    color: #3C3C3C;
+                    text-decoration: none;
+                }
+            }
+
+        }
+
+        &__form {
+            max-width: 650px;
+            & h5 {
+                margin: 1rem 3rem;
+                font-family: 'Gotham Pro',sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 100%;
+                color: #3C3C3C;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
