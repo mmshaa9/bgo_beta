@@ -1,0 +1,71 @@
+.header {
+    margin: 50px 5rem 50px 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    &__logo {
+        background: url("../../assets/img/header/logo.svg");
+        width: 120px;
+        height: 60px;
+
+    }
+}
+.menu {
+    font-family: 'Gotham Pro L', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 1;
+    color: #3C3C3C;
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+    
+    height: 3rem;
+
+    &__text {
+        display: inline-block;
+        cursor: pointer;
+        transition: 1s ease;
+        color: #3C3C3C;
+        &.open {
+            transform: translateY(-50px);
+        }
+    }
+    &__btn {
+        margin-left: 1.8rem;
+        position: relative;
+        width: 2.5rem;
+        height: .875rem;
+        cursor: pointer;
+        color: #3C3C3C;
+        
+        &::after,
+        &::before {
+            content: '';
+            width: 2.5rem;
+            height: .18rem;
+            display: block;
+            background: #6A7B8E;
+            border-radius: 5px;
+            transition: 1s ease;
+            
+        }
+        &::after {
+            transform: rotate(0deg) translateY(.5em);
+        }
+        &::before {
+            transform: rotate(0deg) translateY(0em);
+        }
+        &.open {
+            &::after {
+                transform: rotate(-45deg) translate(-0.6em, -0.3em)
+            }
+            &::before {
+                transform: rotate(45deg) translate(-0.2em, 0.7em);
+            }
+        }
+    }
+}
